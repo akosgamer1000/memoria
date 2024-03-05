@@ -104,5 +104,41 @@
   <ItemGroup>
     <Resource Include="letöltés.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\10.jpg" />
+    <Resource Include="image\11.jpg" />
+    <Resource Include="image\12.jpg" />
+    <Resource Include="image\13.jpg" />
+    <Resource Include="image\14.jpg" />
+    <Resource Include="image\15.jpg" />
+    <Resource Include="image\16.jpg" />
+    <Resource Include="image\17.png" />
+    <Resource Include="image\18.jpg" />
+    <Resource Include="image\19.jpg" />
+    <Resource Include="image\2.jpg" />
+    <Resource Include="image\20.jpg" />
+    <Resource Include="image\21.jpg" />
+    <Resource Include="image\22.jpg" />
+    <Resource Include="image\23.jpg" />
+    <Resource Include="image\24.jpg" />
+    <Resource Include="image\25.jpg" />
+    <Resource Include="image\26.jpg" />
+    <Resource Include="image\27.jpg" />
+    <Resource Include="image\28.jpg" />
+    <Resource Include="image\29.jpg" />
+    <Resource Include="image\3.jpg" />
+    <Resource Include="image\30.jpg" />
+    <Resource Include="image\31.jpg" />
+    <Resource Include="image\32.jpg" />
+    <Resource Include="image\4.jpg" />
+    <Resource Include="image\5.jpg" />
+    <Resource Include="image\6.jpg" />
+    <Resource Include="image\7.jpg" />
+    <Resource Include="image\8.jpg" />
+    <Resource Include="image\9.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

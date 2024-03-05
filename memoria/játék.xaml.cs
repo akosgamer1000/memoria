@@ -28,7 +28,7 @@ namespace memoria
 		{
 			InitializeComponent();
 			greadgeneration();
-			
+			imageload();
 		}
 		public void greadgeneration()
 		{
@@ -62,10 +62,12 @@ namespace memoria
 		}
 		public void imageload()
 		{
-
-			for( int i = 0; i < s;i++)
+			
+			for( int i = 1; i < s;i++)
 			{
-				images.Add(new BitmapImage(new Uri(""));
+				Image s=new Image();
+				s.Source = new BitmapImage(new Uri("pack://application:,,,/image/" + i + ".jpg"));
+				images.Add(s);
 
 			}
 		}

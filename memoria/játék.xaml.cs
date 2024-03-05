@@ -23,12 +23,15 @@ namespace memoria
 		int s = MainWindow.válsztott;
 		List<Button> buttons = new List<Button>();
 		List<Image> images = new List<Image>();
-		
+		List<Image> semmiband=new List<Image>();
+		List<Image> band = new List<Image>();
+
 		public játék()
 		{
 			InitializeComponent();
 			greadgeneration();
 			imageload();
+			shuffle();
 		}
 		public void greadgeneration()
 		{
@@ -51,7 +54,7 @@ namespace memoria
 					img.Stretch = Stretch.Fill;
 					img.Source=new BitmapImage(new Uri("letöltés.jpg", UriKind.RelativeOrAbsolute));
 					b.Content = img;
-
+					
 					x++;
 					Grid.SetColumn(b, j);
 					Grid.SetRow(b, i);
@@ -63,13 +66,40 @@ namespace memoria
 		public void imageload()
 		{
 			
-			for( int i = 1; i < s;i++)
+			for( int i = 1; i < (s*s)/2+1;i++)
 			{
+				try
+				{
+
 				Image s=new Image();
 				s.Source = new BitmapImage(new Uri("pack://application:,,,/image/" + i + ".jpg"));
+					s.Stretch = Stretch.Fill;
 				images.Add(s);
+				}
+				catch (Exception e)
+				{
+
+					Image s = new Image();
+					s.Source = new BitmapImage(new Uri("pack://application:,,,/image/" + i + ".png"));
+					s.Stretch = Stretch.Fill;
+					images.Add(s);
+				}
 
 			}
+		}
+		public void shuffle()
+		{
+			Random random = new Random();
+			foreach(Button s in racs.Children)
+			{
+				int a=random.Next(1,images.Count);
+				int b=random.Next(1,images.Count);
+				s.Content = images[random.Next(1,images.Count)];
+				Button temp=new Button();
+				temp.Content = images[a];
+				s.Content=temp;
+			}
+			
 		}
 	}
 }

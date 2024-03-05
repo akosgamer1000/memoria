@@ -31,7 +31,7 @@ namespace memoria
 			cbox.Items.Add(2);
 			cbox.Items.Add(4);
 			cbox.Items.Add(6);
-			cbox.Items.Add(8);
+			
 		}
 		private void change(object sender, SelectionChangedEventArgs e)
 		{
